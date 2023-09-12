@@ -31,7 +31,7 @@ function App() {
         setPlayer1Name={setPlayer1name}
         setPlayer2Name={setPlayer2name}
       />}/>
-      <Route  path='/game' element= {<Board cells={cells}
+      <Route  path='/tic-tac-toe/game' element= {<Board cells={cells}
         setCells={setCells}
         turn={turn}
         setTurn={setTurn}
