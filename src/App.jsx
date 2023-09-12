@@ -25,7 +25,7 @@ function App() {
   
     <div className="App">
       <Routes>
-        <Route  path='/' element={    <Menu
+        <Route  path='/tic-tac-toe/' element={    <Menu
         player1Name={player1Name}
         player2Name={player2Name}
         setPlayer1Name={setPlayer1name}
