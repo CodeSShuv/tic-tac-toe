@@ -18,7 +18,7 @@ function App() {
   const [player2Name,setPlayer2name] = useState("Player 2")
   return (<>
     <header>
-      <h1><Link to="/">Tic-Tac-Toe</Link></h1>
+      <h1><Link to="/tic-tac-toe/">Tic-Tac-Toe</Link></h1>
     </header>
 
 
