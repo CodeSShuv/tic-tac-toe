@@ -20,7 +20,12 @@ function App() {
     <header>
       <h1><Link to="/tic-tac-toe/">Tic-Tac-Toe</Link></h1>
     </header>
-
+    <Menu
+        player1Name={player1Name}
+        player2Name={player2Name}
+        setPlayer1Name={setPlayer1name}
+        setPlayer2Name={setPlayer2name}
+      />
 
   
     <div className="App">
