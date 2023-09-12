@@ -1,0 +1,164 @@
+.main-board{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column
+}
+.align{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5rem;
+}
+
+.board{
+    position: relative;
+    background-color: rgb(96, 96, 195);
+    width: 40%;
+    height: 70vh;
+    /* aspect-ratio:31 / 25; */
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .3rem;
+}
+
+.cells{
+    background-color: white;
+  
+    width: 32%;
+    
+    height: 32.4%;
+    font-size: 7rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.btn{
+
+    display: none;
+}
+.btn button{
+    width: 10rem;
+    border-radius: 1rem;
+    padding:.8rem;
+    border: none;
+    background-color: rgb(96, 96, 195);
+    color: white;
+    font-size: 1.4rem;
+}
+.main-board{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.msg{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    
+    text-transform: uppercase;
+    color: rgb(96, 96, 195)
+}
+
+.scoreCard{
+    width: 40%;
+    padding:0rem 2rem 0rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.scoreCard span{
+    padding: .5rem 2rem .5rem 2rem;
+    display: inline-block;
+    color: rgb(53, 53, 175);
+}
+.scoreCard span:last-child{
+    color: red;
+}
+.box{
+    /* position: absolute; */
+    /* opacity: 0; */
+    /* display: none; */
+    /* top: -18.6rem; */
+    padding: 1rem;
+    width: 12rem;
+    border-radius:.5rem ;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover{
+    position: absolute;
+    top: 1px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.756);
+    filter: blur(100);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.display{
+    display: flex;
+    /* top:55% */
+}
+    
+@media only screen and (max-width:500px) {
+    .align{
+        overflow: hidden;
+    }
+    .board{
+        background-color: rgb(96, 96, 195);
+        width: 90%;
+        height: 48vh;
+        /* aspect-ratio:31 / 25; */
+    }
+    .cells{
+        background-color: white;
+      
+        width: 31.4%;
+        
+        height: 32%;
+        
+    }
+    .msg{
+        font-size: 1.1rem;
+        padding-left: 1.5rem;
+    }
+    .scoreCard{
+        margin-left: -12rem;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .board{
+        background-color: rgb(96, 96, 195);
+        width: 90%;
+        height: 48vh;
+        /* aspect-ratio:31 / 25; */
+    }   
+    .scoreCard{
+        margin-left: -10rem;
+    }
+    .cells{
+        background-color: white;
+      
+        width: 31.4%;
+        
+        height: 32%;
+        
+    }
+}
+

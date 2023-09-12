@@ -1,0 +1,57 @@
+.inputContainer{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+    background-color: rgb(96, 96, 195);
+    color: white;
+    border-radius: 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    gap: 3rem;
+}
+.inputContainer input{
+    border: none;
+    width: 14rem;
+    height: 1.4rem;
+    border-radius: .2rem;
+}
+.inputArea{
+    width: 100%;
+    display: flex;
+    gap: .5rem;
+}
+.play a{
+    display: inline-block;
+    padding: 1rem;
+    width: 6rem;
+    border-radius: .5rem;
+    background-color: rgb(218, 218, 218);
+    color: rgb(96, 96, 195);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+.play a:hover{
+    background-color: rgb(167, 165, 165);
+}
+@media only screen and (max-width:600px) {
+    .inputContainer{
+        width: 60%;
+        padding: 2rem;
+    }
+    .inputArea{
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+    }
+    .inputArea label{
+        font-weight: 600;
+    }
+    .inputArea input{
+        height: 2rem;
+    }
+}
